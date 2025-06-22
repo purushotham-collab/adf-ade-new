@@ -1,0 +1,17 @@
+{
+	"name": "ds_lookup1_oldwatermarktable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_oneplus",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "watermarktable"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

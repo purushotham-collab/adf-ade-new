@@ -1,0 +1,21 @@
+{
+	"name": "adf-dev-pp",
+	"properties": {
+		"globalParameters": {
+			"Container": {
+				"type": "string",
+				"value": "adfcontainer"
+			},
+			"targetfilepath": {
+				"type": "string",
+				"value": "target"
+			}
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f9fd21a5-bca3-4bc7-a2e6-d7e70f3a9d32",
+		"tenantId": "f3e4cf81-6f22-4e59-8b3e-1cca9dae17fa"
+	}
+}

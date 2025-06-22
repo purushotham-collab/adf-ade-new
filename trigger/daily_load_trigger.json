@@ -1,0 +1,39 @@
+{
+	"name": "daily_load_trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_custom_load",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"TableaList": [
+						{
+							"tableName": "iplteams_last7",
+							"tableSchemaName": "dbo",
+							"WaterMark_Column": "last_updated"
+						},
+						{
+							"tableName": "employees_last7",
+							"tableSchemaName": "dbo",
+							"WaterMark_Column": "last_updated"
+						}
+					]
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2025-06-21T18:44:00",
+				"endTime": "2025-06-23T13:01:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
